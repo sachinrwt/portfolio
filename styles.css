@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Serif', serif;
+    
+}
+
+:root{
+    --primary-color: #eff4fd;
+    --secoundary-color: #212121;
+    --tertiory-color: #000;
+    --forth-color:#fff;
+    --shadow:rgb(1 41 112 / 10%);
+}
+
+.dark{
+    --primary-color: #212121;
+    --secoundary-color: #d4d4d4;
+    --tertiory-color: rgb(255, 255, 255);
+    --forth-color:#000;
+    --shadow:#4541414d;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top:0px;
+}
+
+.logo{
+    width: 60px;
+    cursor: pointer;
+    margin: 15px 15px 15px 90px;
+} 
+
+.nav{
+    display: flex;
+    background: var(--primary-color);
+}
+
+ul{
+    margin-left: 800px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 12px 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--tertiory-color);
+    font-weight: bold;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+}
+
+nav ul li i{
+    text-decoration: none;
+    color: var(--tertiory-color);
+    font-weight: bold;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.fa-moon{
+    cursor: pointer;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: var(--secoundary-color);
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detel p{
+    color: var(--secoundary-color);
+    line-height: 22px;
+}
+
+.detel a{
+    background: var(--secoundary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 50px 0;
+    border-radius: 5px;
+}
+
+.detel a:hover{
+    background: orange;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a{
+    font-size: 30px;
+    color: var(--secoundary-color);
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: orange;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    
+}
+
+.aboutc{
+    display: flex;
+    align-items: center;
+    padding-left: 24%;
+    padding-top: 18%;
+}
+
+.aboutc h1{
+    font-size: 50px;
+    color: orange;
+    margin-bottom: 20px;
+    padding-right: 90px;
+    font-family: 'Inria Serif', serif;
+}
+
+.aboutc p{
+    color: var(--secoundary-color);
+    line-height: 22px;
+    padding-right: 40%;
+    font-family: 'Inria Serif', serif;
+}
+
+.portfolio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    position: relative;
+}
+
+.portfolio h1{
+    font-size: 70px;
+    color: orange;
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Inria Serif', serif;
+}
+
+.project-img{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;  
+    margin-top: 60px;
+}
+
+.project-img img{
+    width: 400px;
+    margin: 10px;
+}
+
+.project-img {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    grid-gap: 1rem;
+    pointer-events: none;
+  }
+  
+  .project-img:hover .projects:not(:hover) {
+    opacity: 0.2;
+  }
+  
+  .projects {
+    
+    border-radius: .5rem;
+    aspect-ratio: 1/1;
+    pointer-events: auto;
+    transition: opacity 300ms;
+  }
+
+.info p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 53px;
+    margin-right: 53px;
+    color: var(--secoundary-color);
+    
+}
+
+.info h4{
+    margin-top: 10px;
+    color: orange;
+}
+
+.projects{
+    text-align: center;
+    border-radius: 5px;
+    background: var(--forth-color);
+    box-shadow: 0px 0 30px var(--shadow);
+    transition: 0.3s;
+    width: 400px;
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+.p-image{
+    position: relative;
+    
+}
+
+.repo{
+   position: absolute;
+   display: none;
+   padding: 10px;
+   margin-left: 6px;
+   margin-top:-290px;
+   
+}
+
+.p-img img{
+    z-index: 2;
+}
+
+a.overlay { 
+    width: 28%; 
+    height:60%; 
+    position: absolute; 
+    overflow: hidden;
+}
+
+.repo a{
+    font-size: 40px;
+    color: var(--primary-color)
+}
+
+.repo a:hover{
+    color: orange;
+}
+
+.p-img img:hover{
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+img:hover + .repo {
+    display: block;
+}
+
+.repo:hover{
+    display: block;
+}
+
+
+
+.services{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+}
+
+.services h1{
+    font-size: 70px;
+    color: orange;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.services p{
+    color: var(--secoundary-color);
+    line-height: 22px;
+    padding:5%;
+    font-family: 'Inria Serif', serif;
+}
+
+
+#footer{
+    background-color: var(--primary-color);
+    color: var(--secoundary-color);
+    text-align: center;
+    line-height: 28px;
+    padding: 1% 12% 1% ;
+  }
+
+
+
+.fo-icon{
+    font-size: 20px;
+    color: var(--secoundary-color);
+    margin-right: 10px;
+}
+
+.fo-icon:hover{
+    color: orange;
+}
+
+
+
+
+.scrollable b {
+    font-family: 'Special Elite', cursive;
+    font-size: 28px;
+}
+      
+.content {
+    padding: 16px;
+}
+      
+.sticky {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+    background-color:var(--primary-color);
+    box-shadow: 0px 0 30px var(--shadow);
+}
+
+
