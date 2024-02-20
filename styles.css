@@ -348,6 +348,8 @@ img:hover + .repo {
     color: var(--secoundary-color);
     line-height: 22px;
     padding:5%;
+    padding-left:20%:
+    padding-right:20%
     font-family: 'Inria Serif', serif;
 }
 
